@@ -1,6 +1,6 @@
 <?php namespace Gab\Helpers;
 
-class DomHelper {
+class GabHelpers {
 	
 
 	/**
