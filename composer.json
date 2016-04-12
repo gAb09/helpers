@@ -11,11 +11,11 @@
     ],
     "require": {
         "php": ">=5.3.0",
-        "laravel/framework": "5.2.29",
+        "laravel/framework": "5.2.29"
     },
     "autoload": {
         "psr-4": {
-            "Gab\\Helpers": "src/"
+            "Gab\\Helpers\\": "src/"
         }
     },
     "minimum-stability": "dev"
