@@ -1,4 +1,4 @@
-<?php namespace Gab\Domaines;
+<?php namespace Gab\Helpers;
 
 class DomHelper {
 	

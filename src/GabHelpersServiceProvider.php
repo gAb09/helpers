@@ -1,8 +1,8 @@
-<?php namespace Gab\Domaines;
+<?php namespace Gab\Helpers;
 
 use Illuminate\Support\ServiceProvider;
 
-class DomainesServiceProvider extends ServiceProvider {
+class GabHelpersServiceProvider extends ServiceProvider {
 
 	/**
 	 * Indicates if loading of the provider is deferred.
@@ -20,9 +20,9 @@ class DomainesServiceProvider extends ServiceProvider {
 	{
 		$app = $this->app;
 
-		$app['domhelper'] = $app->share(function($app)
+		$app['gabHelpers'] = $app->share(function($app)
 		{
-			return new DomHelper;
+			return new GabHelpers;
 		});
 
 	}
@@ -34,7 +34,7 @@ class DomainesServiceProvider extends ServiceProvider {
 	 */
 	public function provides()
 	{
-		return array('domhelper');
+		return array('gabHelpers');
 	}
 
 }
